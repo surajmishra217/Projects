@@ -1,2 +1,2 @@
-PowerBI_dashboard_project
+SALES DASHBOARD.pbix
 # Projects
