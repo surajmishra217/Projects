@@ -32,6 +32,15 @@ A Power BI dashboard for exploring employee and HR metrics.
 - Resume project outcomes: **25%** less report-generation time and an **8%** retention improvement outcome.
 - **Project file:** [HR ANALYTICS DASHBOARD.pbix](./HR%20ANALYTICS%20DASHBOARD.pbix)
 
+### 4. E-commerce Sales & Customer Behaviour Analytics — SQL, Python & Power BI
+An end-to-end analytics project using a clearly labelled synthetic retail dataset to explore sales performance, profitability, repeat purchases and customer segments.
+
+- Generated a reproducible transaction dataset and performed analysis with Python and SQL.
+- Built monthly, category and regional performance outputs and RFM customer segments.
+- Includes SQL queries, Python analysis, Power BI DAX measures and dashboard build guidance.
+- **Project folder:** [E-commerce Sales & Customer Behaviour Analytics](./E-commerce%20Sales%20%26%20Customer%20Behaviour%20Analytics/README.md)
+- **Important:** All data and metrics are synthetic examples, not real company results.
+
 ### Additional workbook
 - [Excel Project — Bike Sales workbook](./Excel%20Project/Excel%20Project%20Bike%20Sales.xlsx)
 - [Workbook notes](./Excel%20Project/README.md)
