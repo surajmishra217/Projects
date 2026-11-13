@@ -63,6 +63,19 @@ An end-to-end analytics project using a clearly labelled synthetic retail datase
 
 ---
 
+## Interactive browser dashboards
+
+The repository now includes a runnable Streamlit application with interactive E-commerce and Telecom Customer Churn dashboards. It supports filters, KPI cards, Plotly charts, data tables and filtered CSV downloads.
+
+- **[Dashboard app source](./interactive-dashboards/app.py)**
+- **[Run and deployment instructions](./interactive-dashboards/README.md)**
+
+To run locally, install `interactive-dashboards/requirements.txt` and execute `streamlit run interactive-dashboards/app.py`. For a public live link, deploy it through Streamlit Community Cloud; GitHub Pages does not host Streamlit apps.
+
+**Native BI files:** [Sales Power BI report](./SALES%20DASHBOARD.pbix) · [HR Power BI report](./HR%20ANALYTICS%20DASHBOARD.pbix). These existing `.pbix` files can be opened in Power BI Desktop. The churn dashboard in the Streamlit app is not a Tableau workbook; use the included churn CSV as a Tableau data source to author a native Tableau workbook in Tableau Desktop/Public.
+
+---
+
 ## Tools and skills
 
 - **SQL:** MySQL, PostgreSQL, advanced querying
