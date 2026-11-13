@@ -24,6 +24,12 @@ This generates the synthetic transaction data and analysis outputs under `data/`
 ## SQL portfolio skills
 The SQL file demonstrates aggregations, joins, CTEs, window functions, ranking, repeat-purchase analysis and month-over-month growth.
 
+## Dashboard preview
+
+![E-commerce sales dashboard preview](../assets/power-bi-sales-preview.svg)
+
+This is an illustrative Power BI-style visual built for the portfolio using the project's synthetic example metrics. It is not a screenshot from Power BI and does not replace a native `.pbix` report.
+
 ## Power BI dashboard
 Import `data/ecommerce_transactions.csv`, `data/customers.csv`, `data/products.csv`, and `outputs/customer_rfm_segments.csv`. Follow `powerbi/dax_measures.md`.
 
