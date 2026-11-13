@@ -110,17 +110,20 @@ def churn_dashboard():
     b.metric("Churned customers",f"{churned:,}")
     c.metric("Churn rate",f"{rate:.1f}%")
     d.metric("Average monthly charge",money(f.MonthlyCharges.mean()) if "MonthlyCharges" in f else "N/A")
+    f = f.assign(ChurnFlag=f.Churn.astype(str).str.lower().eq("yes"))
     x,y=st.columns(2)
     if "Contract" in f:
-        cr=f.groupby("Contract",as_index=False).Churn.apply(lambda s:(s.astype(str).str.lower().eq("yes").mean()*100)).rename(columns={"Churn":"Churn rate"})
+        cr=f.groupby("Contract",as_index=False).ChurnFlag.mean()
+        cr["Churn rate"] = cr["ChurnFlag"] * 100
         x.plotly_chart(px.bar(cr,x="Contract",y="Churn rate",color="Contract",title="Churn rate by contract"),use_container_width=True)
     if "tenure" in f:
         f2=f.assign(TenureBand=pd.cut(f.tenure,bins=[-1,12,24,48,72],labels=["0–12","13–24","25–48","49–72"]))
-        tr=f2.groupby("TenureBand",observed=False).Churn.apply(lambda s:s.astype(str).str.lower().eq("yes").mean()*100).reset_index(name="Churn rate")
+        tr=f2.groupby("TenureBand",observed=False).ChurnFlag.mean().mul(100).reset_index(name="Churn rate")
         y.plotly_chart(px.bar(tr,x="TenureBand",y="Churn rate",title="Churn rate by tenure band"),use_container_width=True)
     p,q=st.columns(2)
     if "InternetService" in f:
-        ir=f.groupby("InternetService",as_index=False).Churn.apply(lambda s:s.astype(str).str.lower().eq("yes").mean()*100).rename(columns={"Churn":"Churn rate"})
+        ir=f.groupby("InternetService",as_index=False).ChurnFlag.mean()
+        ir["Churn rate"] = ir["ChurnFlag"] * 100
         p.plotly_chart(px.bar(ir,x="InternetService",y="Churn rate",title="Churn rate by internet service"),use_container_width=True)
     if "MonthlyCharges" in f:
         q.plotly_chart(px.histogram(f,x="MonthlyCharges",color="Churn",nbins=25,barmode="overlay",title="Monthly charges by churn status"),use_container_width=True)
