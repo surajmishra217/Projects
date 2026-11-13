@@ -9,6 +9,10 @@ A collection of independent analytics projects by **Suraj Mishra**, focused on b
 ## Featured projects
 
 ### 1. Interactive Sales Dashboard — Power BI
+
+![Illustrative Power BI sales dashboard preview](./assets/power-bi-sales-preview.svg)
+
+*Portfolio visual preview; use the linked `.pbix` file for the actual Power BI report.*
 An interactive sales dashboard built to track key performance indicators and explore sales trends.
 
 - Resume project outcome: reporting speed improved by **30%** through dynamic filters and optimized visuals.
@@ -16,6 +20,10 @@ An interactive sales dashboard built to track key performance indicators and exp
 - **Project file:** [SALES DASHBOARD.pbix](./SALES%20DASHBOARD.pbix)
 
 ### 2. Telecom Customer Churn — Python Exploratory Analysis
+
+![Tableau-style churn analysis concept preview](./assets/tableau-churn-preview.svg)
+
+*Conceptual Tableau-style presentation preview. The project currently includes the Python notebook and report; this image is not a native Tableau workbook.*
 An exploratory analysis of telecom customer churn, supported by a Jupyter notebook, dataset, and written report.
 
 - The notebook's displayed dataset contains **7,043 rows and 21 columns**.
@@ -26,6 +34,10 @@ An exploratory analysis of telecom customer churn, supported by a Jupyter notebo
 - **Project notes:** [Python project README](./python%20project/README.md)
 
 ### 3. HR Analytics Dashboard — Power BI
+
+![Excel-style HR analytics dashboard concept preview](./assets/excel-hr-preview.svg)
+
+*Excel-style layout preview. KPI values are intentionally blank; this is not a screenshot of a completed Excel workbook.*
 A Power BI dashboard for exploring employee and HR metrics.
 
 - Resume project scope: analysis of **1,000+ employee records**.
@@ -33,6 +45,10 @@ A Power BI dashboard for exploring employee and HR metrics.
 - **Project file:** [HR ANALYTICS DASHBOARD.pbix](./HR%20ANALYTICS%20DASHBOARD.pbix)
 
 ### 4. E-commerce Sales & Customer Behaviour Analytics — SQL, Python & Power BI
+
+![E-commerce Power BI-style dashboard preview](./assets/power-bi-sales-preview.svg)
+
+*Illustrative preview based on the project's synthetic dataset; not a `.pbix` screenshot.*
 An end-to-end analytics project using a clearly labelled synthetic retail dataset to explore sales performance, profitability, repeat purchases and customer segments.
 
 - Generated a reproducible transaction dataset and performed analysis with Python and SQL.
